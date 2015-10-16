@@ -65,12 +65,12 @@ There are two scripts in the repository. Most of the code is organized in the
 `dmotions` module, which is an early version of
 [pymanoid](https://github.com/Tastalian/pymanoid).
 
-### generate\_motion.py
+### [generate\_motion.py](https://github.com/Tastalian/surface-contacts-icra-2015/blob/master/generate_motion.py)
 
 Script generating the complete motion (including retiming) and writing it as
 POS files into `openhrp/motions/`. These files can then be executed in OpenHRP.
 
-### check\_polyhedron.py
+### [check\_polyhedron.py](https://github.com/Tastalian/surface-contacts-icra-2015/blob/master/check_polyhedron.py)
 
 Code used to double-check the validity of the analytical wrench cone by random
 sampling. Writes down a success rate to the standard output, and fires up a 3D
