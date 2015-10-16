@@ -36,10 +36,12 @@ in single support, and demonstrate their consistency in the OpenHRP simulator.
 
 **Robot model:** you need to have your own model of HRP-4 in order to run the
 main script `generate_motion.py`. The two model files that are not distributed
-in this repository are: `model.dae` (COLLADA model) and `model.py` (joint
-limits), both located in `dmotions/hrp4`.
+in this repository are: 
 
-Otherwise, the software has the following dependencies:
+- `model.dae` (COLLADA model) 
+- `model.py` (joint limits)
+
+They are both located in `dmotions/hrp4`. Otherwise, software dependencies are:
 
 - [CVXOPT](http://cvxopt.org/)
   - used for Quadratic Programming
