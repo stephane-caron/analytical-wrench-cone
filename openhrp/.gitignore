@@ -1,0 +1,4 @@
+*.class
+bodyinfo.py
+check_motion.py
+send_motion.py
