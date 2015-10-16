@@ -1,6 +1,7 @@
-# Stability of Surface Contacts for Humanoid Robots: Closed-Form Formulae of the Contact Wrench Cone for Rectangular Support Areas
+# Stability of Surface Contacts for Humanoid Robots
+## Closed-Form Formulae of the Contact Wrench Cone for Rectangular Support Areas
 
-<img src="https://scaron.info/images/icra-2015.png" width="400">
+<img src="https://raw.githubusercontent.com/Tastalian/surface-contacts-icra-2015/master/.illustration.png" width="90%">
 
 Source code for the paper:
 
