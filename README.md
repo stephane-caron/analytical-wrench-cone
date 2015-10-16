@@ -1,12 +1,14 @@
 # Stability of Surface Contacts for Humanoid Robots: Closed-Form Formulae of the Contact Wrench Cone for Rectangular Support Areas
 
-<img src="https://raw.githubusercontent.com/Tastalian/surface-contacts-icra-2015/master/.illustration.png" width="90%">
+Source code for the paper: 
+ 
+Stéphane Caron, Quang-Cuong Pham and Yoshihiko Nakamura.  [Stability of Surface
+Contacts for Humanoid Robots: Closed-Form Formulae of the Contact Wrench Cone
+for Rectangular Support Areas](https://scaron.info/research/icra-2015.html).
+*The 2015 IEEE International Conference on Robotics and Automation (ICRA)*,
+Seattle, USA, May 2015.
 
-Source code for the paper: [Stability of Surface Contacts for Humanoid Robots:
-Closed-Form Formulae of the Contact Wrench Cone for Rectangular Support
-Areas](https://scaron.info/research/icra-2015.html). Stéphane Caron,
-Quang-Cuong Pham and Yoshihiko Nakamura. *The 2015 IEEE International
-Conference on Robotics and Automation (ICRA)*, Seattle, USA, May 2015.
+<img src="https://raw.githubusercontent.com/Tastalian/surface-contacts-icra-2015/master/.illustration.png" width="90%">
 
 ## Requirements
 
