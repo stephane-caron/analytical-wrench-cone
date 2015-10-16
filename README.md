@@ -30,16 +30,18 @@ Authors:
 [Quang-Cuong Pham](https://www.normalesup.org/~pham/) and
 [Yoshihiko Nakamura](http://www.ynl.t.u-tokyo.ac.jp/)
 
-## Requirements
+## Robot model
 
-**Robot model:** you need to have your own model of HRP-4 in order to run the
-main script `generate_motion.py`. The two model files that are not distributed
-in this repository are: 
+You need to have your own model of HRP-4 in order to run the main script
+`generate_motion.py`. The two model files that are not distributed in this
+repository are: 
 
 - `model.dae` (COLLADA model) 
 - `model.py` (joint limits)
 
-They are both located in `dmotions/hrp4`. Otherwise, software dependencies are:
+They are both located in `dmotions/hrp4`.
+
+## Dependencies
 
 - [CVXOPT](http://cvxopt.org/)
   - used for Quadratic Programming
