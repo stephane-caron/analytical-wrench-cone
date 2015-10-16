@@ -36,7 +36,7 @@ in single support, and demonstrate their consistency in the OpenHRP simulator.
 **Robot model:** you need to have your own model of HRP-4 in order to run the
 main script `generate_motion.py`. The two model files that are not distributed
 in this repository are: `model.dae` (COLLADA model) and `model.py` (joint
-limits).
+limits), both located in `dmotions/hrp4`.
 
 Otherwise, the software has the following dependencies:
 
