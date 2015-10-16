@@ -1,14 +1,34 @@
 # Stability of Surface Contacts for Humanoid Robots: Closed-Form Formulae of the Contact Wrench Cone for Rectangular Support Areas
 
-Source code for the paper: 
- 
-Stéphane Caron, Quang-Cuong Pham and Yoshihiko Nakamura.  [Stability of Surface
-Contacts for Humanoid Robots: Closed-Form Formulae of the Contact Wrench Cone
-for Rectangular Support Areas](https://scaron.info/research/icra-2015.html).
-*The 2015 IEEE International Conference on Robotics and Automation (ICRA)*,
-Seattle, USA, May 2015.
+Source code for http://arxiv.org/abs/1501.04719
 
 <img src="https://raw.githubusercontent.com/Tastalian/surface-contacts-icra-2015/master/.illustration.png" width="90%">
+
+## Abstract
+
+Humanoid robots locomote by making and breaking contacts with their
+environment. A crucial problem is therefore to find precise criteria for
+a given contact to remain stable or to break. For rigid surface contacts, the
+most general criterion is the Contact Wrench Condition (CWC). To check whether
+a motion satisfies the CWC, existing approaches take into account a large
+number of individual contact forces (for instance, one at each vertex of the
+support polygon), which is computationally costly and prevents the use of
+efficient inverse-dynamics methods. Here we argue that the CWC can be
+explicitly computed without reference to individual contact forces, and give
+closed-form formulae in the case of rectangular surfaces -- which is of
+practical importance. It turns out that these formulae simply and naturally
+express three conditions: (i) Coulomb friction on the resultant force, (ii) ZMP
+inside the support area, and (iii) bounds on the yaw torque. Conditions (i) and
+(ii) are already known, but condition (iii) is, to the best of our knowledge,
+novel. It is also of particular interest for biped locomotion, where undesired
+foot yaw rotations are a known issue. We also show that our formulae yield
+simpler and faster computations than existing approaches for humanoid motions
+in single support, and demonstrate their consistency in the OpenHRP simulator. 
+
+Authors:
+[Stéphane Caron](https://scaron.info),
+[Quang-Cuong Pham](https://www.normalesup.org/~pham/) and
+[Yoshihiko Nakamura](http://www.ynl.t.u-tokyo.ac.jp/)
 
 ## Requirements
 
