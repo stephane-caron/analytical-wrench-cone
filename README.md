@@ -1,6 +1,6 @@
 # Stability of Surface Contacts for Humanoid Robots: Closed-Form Formulae of the Contact Wrench Cone for Rectangular Support Areas
 
-<img src="https://raw.githubusercontent.com/Tastalian/surface-contacts-icra-2015/master/.illustration.png" height="250" />
+<img src="https://raw.githubusercontent.com/stephane-caron/surface-contacts-icra-2015/master/.illustration.png" height="250" />
 
 Source code for http://arxiv.org/abs/1501.04719
 
@@ -63,14 +63,14 @@ They are both located in `dmotions/hrp4`.
 
 There are two scripts in the repository. Most of the code is organized in the
 `dmotions` module, which is an early version of
-[pymanoid](https://github.com/Tastalian/pymanoid).
+[pymanoid](https://github.com/stephane-caron/pymanoid).
 
-### [generate\_motion.py](https://github.com/Tastalian/surface-contacts-icra-2015/blob/master/generate_motion.py)
+### [generate\_motion.py](https://github.com/stephane-caron/surface-contacts-icra-2015/blob/master/generate_motion.py)
 
 Script generating the complete motion (including retiming) and writing it as
 POS files into `openhrp/motions/`. These files can then be executed in OpenHRP.
 
-### [check\_polyhedron.py](https://github.com/Tastalian/surface-contacts-icra-2015/blob/master/check_polyhedron.py)
+### [check\_polyhedron.py](https://github.com/stephane-caron/surface-contacts-icra-2015/blob/master/check_polyhedron.py)
 
 Code used to double-check the validity of the analytical wrench cone by random
 sampling. Writes down a success rate to the standard output, and fires up a 3D
