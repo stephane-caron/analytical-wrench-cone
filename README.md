@@ -76,12 +76,3 @@ Code used to double-check the validity of the analytical wrench cone by random
 sampling. Writes down a success rate to the standard output, and fires up a 3D
 plot displaying valid (green) and erroneous (red) points. See the paper for
 details.
-
-## License
-
-The source code is released under the GPLv3 license. In short, you can copy,
-distribute and modify the software, provided that you track your changes/dates
-in source files and distribute your modifications (along with their source code
-and references to the original work) under the same license. For details,
-please refer to the LICENSE file in the repository.
-
