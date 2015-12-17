@@ -30,34 +30,22 @@ Authors:
 [Quang-Cuong Pham](https://www.normalesup.org/~pham/) and
 [Yoshihiko Nakamura](http://www.ynl.t.u-tokyo.ac.jp/)
 
-## Robot model
+## Requirements
 
-You need to have your own model of HRP-4 in order to run the main script
-`generate_motion.py`. The two model files that are not distributed in this
-repository are: 
+- [CVXOPT](http://cvxopt.org/) (1.1.7)
+- [OpenRAVE](https://github.com/rdiankov/openrave) (0.9.0)
+- [NumPy](http://www.numpy.org/) (1.8.2)
+- [TOPP](https://github.com/quangounet/TOPP/commit/5370e95f635ac9e50538bb748fd93cee4758fcc9)
 
-- `model.dae` (COLLADA model) 
-- `model.py` (joint limits)
+For OpenRAVE, the code has been tested with commit
+`f68553cb7a4532e87f14cf9db20b2becedcda624` in branch `latest_stable`. You may
+need to [fix the Collision report
+issue](https://github.com/rdiankov/openrave/issues/333#issuecomment-72191884).
 
-They are both located in `dmotions/hrp4`.
-
-## Dependencies
-
-- [CVXOPT](http://cvxopt.org/)
-  - used for Quadratic Programming
-  - tested with version 1.1.7
-- [OpenRAVE](https://github.com/rdiankov/openrave)
-  - used for forward kinematics and visualization
-  - tested with commit `f68553cb7a4532e87f14cf9db20b2becedcda624` in branch
-    `latest_stable`
-  - you may need to [fix the Collision report issue](https://github.com/rdiankov/openrave/issues/333#issuecomment-72191884)
-- [NumPy](http://www.numpy.org/)
-  - used for scientific computing
-  - tested with version 1.8.2
-- [TOPP](https://github.com/quangounet/TOPP)
-  - used for time-optimal retiming of generated motions
-  - tested with commit `5370e95f635ac9e50538bb748fd93cee4758fcc9` in branch
-    `master`
+You will also need the ``model.dae`` COLLADA model for HRP4 (md5sum
+``dcea527e4fb2e7abae64a27a017102e4`` for our version), as well as the
+``model.py`` helper scripts in the library folders. Unfortunately it is unclear
+whether we can release these files here due to copyright problems.
 
 ## Usage
 
