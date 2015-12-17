@@ -1,7 +1,5 @@
 # Stability of Surface Contacts for Humanoid Robots: Closed-Form Formulae of the Contact Wrench Cone for Rectangular Support Areas
 
-<img src="https://raw.githubusercontent.com/stephane-caron/icra-2015/master/.illustration.png" height="250" />
-
 Source code for http://arxiv.org/abs/1501.04719
 
 ## Abstract
@@ -24,6 +22,8 @@ novel. It is also of particular interest for biped locomotion, where undesired
 foot yaw rotations are a known issue. We also show that our formulae yield
 simpler and faster computations than existing approaches for humanoid motions
 in single support, and demonstrate their consistency in the OpenHRP simulator. 
+
+<img src="https://raw.githubusercontent.com/stephane-caron/icra-2015/master/.illustration.png" height="250" />
 
 Authors:
 [Stéphane Caron](https://scaron.info),
