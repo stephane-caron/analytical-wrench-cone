@@ -1,4 +1,4 @@
-# Stability of Surface Contacts for Humanoid Robots: Closed-Form Formulae of the Contact Wrench Cone for Rectangular Support Areas
+# Contact Wrench Cones for Rectangular Support Areas
 
 Source code for http://arxiv.org/abs/1501.04719
 
