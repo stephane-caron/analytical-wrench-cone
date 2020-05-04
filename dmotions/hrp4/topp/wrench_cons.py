@@ -191,9 +191,12 @@ class WrenchConstraint(TOPPConstraint):
         import pylab
         assert pylab.norm(R - eye(3)) <= 1e-1  # tmp
         O = zeros((3, 3))
+
+        # Thanks to Steven Jens Jorgensen for fixing the line below
+        # See https://github.com/stephane-caron/analytical-wrench-cone/issues/2
         wrench_rotation = vstack([
-            hstack([R, O]),
-            hstack([O, R])])
+            hstack([R.transpose(), O]),
+            hstack([O, R.transpose()])])
 
         # Wrench friction cone (inertial frame)
         #
