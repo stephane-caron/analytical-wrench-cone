@@ -54,14 +54,14 @@ class WrenchConstraint(TOPPConstraint):
         self.nb_recomp = 0
 
     def compute_actuated_projector_righetti(self, q):
-        """This function implements the result from
+        """
+        This function implements the actuated projector from
 
             Righetti, Ludovic, et al. "Optimal distribution of contact forces
             with inverse-dynamics control." The International Journal of
             Robotics Research 32.3 (2013): 280-298.
 
         with a custom weight matrix on constraint variables.
-
         """
         weight_mat = eye(6)
         weight_mat[2, 2] = -X ** 2 - Y ** 2 - 2 * mu ** 2  # fz^2
@@ -161,6 +161,13 @@ class WrenchConstraint(TOPPConstraint):
                 b.append(b_taumin[dof.index])
                 c.append(c_taumin[dof.index])
 
+        # Wrench friction cone
+        #
+        #     C_local * wrench_local <= 0
+        #
+        # where ``wrench_local`` is expressed in the contact frame located at
+        # the center of the rectangular foot contact area, with axes parallel
+        # to the edges of the area.
         C_local = array([
             [+1,  0,           -mu,   0,   0,  0],
             [-1,  0,           -mu,   0,   0,  0],
@@ -187,9 +194,16 @@ class WrenchConstraint(TOPPConstraint):
         wrench_rotation = vstack([
             hstack([R, O]),
             hstack([O, R])])
+
+        # Wrench friction cone (inertial frame)
+        #
+        #     C * wrench <= 0
+        #
+        # where ``wrench`` is expressed in the inertial frame located at the
+        # center of the rectangular foot contact area, with axes parallel to
+        # those of the world frame.
         C = dot(C_local, wrench_rotation)
 
-        # C * wrench <= 0
         a_wrench = alldot(C, Pc, a0)
         b_wrench = alldot(C, Pc, b0)
         c_wrench = alldot(C, Pc, c0)
